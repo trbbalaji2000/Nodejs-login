@@ -4,6 +4,11 @@ var Register_Model=require('../Models/Register')
 const Cryptr = require('cryptr');
 const cryptr = new Cryptr('myTotalySecretKey');
 
+
+app.get('/welcome',(req,res)=>{
+    res.send("Welcome Register Screen....")
+})
+
 app.post('/registerdata',async(req,res)=>{
   
 
