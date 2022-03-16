@@ -13,6 +13,9 @@ mongo.connect(connectionString,(err)=>{
 })
 app.use(body.json())
 app.use('/api',reg);
+app.get('/',(req,res)=>{
+    res.send("Welcome To Login Apps")
+})
 
 app.listen(port,()=>{
     console.log("Server Is Running ...."+port);
