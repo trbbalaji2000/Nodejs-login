@@ -49,16 +49,16 @@ app.post('/login',async(req,res)=>{
     {
         if(decrpt==password)
         {
-            res.send("Welcome")
+            res.json("Welcome")
         }
         else
         {
-            res.send("Invalid Password")
+            res.json("Invalid Password")
         }
     }
     else
     {
-        res.send("Account Is Not Available")
+        res.json("Account Is Not Available")
     }
    
 
